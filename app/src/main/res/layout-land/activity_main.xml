@@ -1,0 +1,229 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="fill_parent"
+    android:layout_height="fill_parent" tools:context=".MainActivity"
+    style="@android:style/Theme.DeviceDefault.NoActionBar">
+
+    <TabHost
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/tabHost"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            style="@android:style/Theme.Black.NoTitleBar.Fullscreen"
+            android:background="@drawable/grey">
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:visibility="visible"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@android:id/tabcontent"></TabWidget>
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="wrap_content"
+                android:layout_height="300dp"
+                android:layout_alignParentTop="true">
+
+                <RelativeLayout
+                    android:id="@+id/home"
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:orientation="vertical"
+                    android:weightSum="1"
+                    android:background="@drawable/white2">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:id="@+id/logo"
+                        android:src="@drawable/logo"
+                        android:scaleType="centerInside"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true" />
+
+                    <ImageButton
+                        android:layout_width="520dp"
+                        android:layout_height="40dp"
+                        android:id="@+id/aboutus"
+                        android:contentDescription="about"
+                        android:background="@drawable/aboutus2"
+                        android:clickable="true"
+                        android:layout_marginTop="10dp"
+                        android:layout_below="@+id/logo"
+                        android:layout_alignParentTop="false"
+                        android:layout_alignParentBottom="false"
+                        android:layout_alignParentLeft="false"
+                        android:layout_alignParentRight="false"
+                        android:layout_centerHorizontal="true" />
+
+                    <ImageButton
+                        android:layout_width="520dp"
+                        android:layout_height="40dp"
+                        android:id="@+id/cplan"
+                        android:contentDescription="cplan"
+                        android:background="@drawable/cplan2"
+                        android:clickable="true"
+                        android:layout_below="@+id/aboutus"
+                        android:layout_alignRight="@+id/aboutus"
+                        android:layout_alignParentRight="false"
+                        android:layout_alignLeft="@+id/aboutus"
+                        android:layout_alignStart="@+id/aboutus"
+                        android:layout_alignParentTop="false"
+                        android:layout_alignParentBottom="false"
+                        android:layout_alignParentLeft="false"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="1dp"
+                        android:longClickable="false" />
+
+                    <ImageButton
+                        android:layout_width="520dp"
+                        android:layout_height="40dp"
+                        android:id="@+id/products"
+                        android:background="@drawable/products2"
+                        android:clickable="true"
+                        android:layout_below="@+id/cplan"
+                        android:layout_alignRight="@+id/cplan"
+                        android:layout_alignParentRight="false"
+                        android:layout_alignLeft="@+id/cplan"
+                        android:layout_alignStart="@+id/cplan"
+                        android:layout_alignParentTop="false"
+                        android:layout_alignParentBottom="false"
+                        android:layout_alignParentLeft="false"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="1dp" />
+
+                    <ImageButton
+                        android:layout_width="520dp"
+                        android:layout_height="40dp"
+                        android:id="@+id/videos"
+                        android:focusable="true"
+                        android:background="@drawable/videos2"
+                        android:clickable="true"
+                        android:layout_below="@+id/products"
+                        android:layout_alignRight="@+id/products"
+                        android:layout_alignParentRight="false"
+                        android:layout_alignLeft="@+id/products"
+                        android:layout_alignStart="@+id/products"
+                        android:layout_alignParentTop="false"
+                        android:layout_alignParentLeft="false"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="1dp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/contactus"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:id="@+id/logo1"
+                        android:src="@drawable/logo"
+                        android:scaleType="centerInside"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true" />
+
+                    <ImageView
+                        android:layout_width="520dp"
+                        android:layout_height="37dp"
+                        android:id="@+id/address"
+                        android:background="@drawable/add2"
+                        android:layout_below="@+id/logo1"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="10dp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="33dp"
+                        android:id="@+id/phone"
+                        android:layout_alignLeft="@+id/address"
+                        android:layout_alignStart="@+id/address"
+                        android:layout_below="@+id/address"
+                        android:layout_alignRight="@+id/address"
+                        android:layout_alignEnd="@+id/address"
+                        android:layout_marginTop="1dp"
+                        android:background="@drawable/cell2" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="33dp"
+                        android:id="@+id/mail"
+                        android:layout_below="@+id/phone"
+                        android:layout_alignLeft="@+id/phone"
+                        android:layout_alignStart="@+id/phone"
+                        android:layout_marginTop="1dp"
+                        android:background="@drawable/mail2"
+                        android:layout_alignRight="@+id/phone"
+                        android:layout_alignEnd="@+id/phone" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="33dp"
+                        android:id="@+id/fb"
+                        android:layout_below="@+id/mail"
+                        android:layout_alignLeft="@+id/mail"
+                        android:layout_alignStart="@+id/mail"
+                        android:layout_marginTop="1dp"
+                        android:background="@drawable/fb2"
+                        android:layout_alignRight="@+id/mail"
+                        android:layout_alignEnd="@+id/mail" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="33dp"
+                        android:id="@+id/tw"
+                        android:layout_below="@+id/fb"
+                        android:layout_alignLeft="@+id/fb"
+                        android:layout_alignStart="@+id/fb"
+                        android:background="@drawable/tw2"
+                        android:layout_marginTop="1dp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="33dp"
+                        android:id="@+id/insta"
+                        android:layout_below="@+id/tw"
+                        android:layout_alignLeft="@+id/tw"
+                        android:layout_alignStart="@+id/tw"
+                        android:background="@drawable/insta2"
+                        android:layout_marginTop="1dp" />
+                </RelativeLayout>
+
+                <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                     xmlns:tools="http://schemas.android.com/tools"
+                    android:id="@+id/myaccount"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <WebView
+                        android:layout_width="match_parent"
+                        android:layout_height="367dp"
+                        android:id="@+id/webView" />
+                </RelativeLayout>
+
+            </FrameLayout>
+
+        </RelativeLayout>
+
+    </TabHost>
+
+</RelativeLayout>
+

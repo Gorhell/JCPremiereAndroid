@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">JC Premiere</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="home">img1</string>
+    <string name="homeimage">homeimage</string>
+    <string name="home_image">homeimage</string>
+    <string name="title_activity_products">products</string>
+    <string name="title_activity_about_us">aboutUs</string>
+    <string name="title_activity_videos">videos</string>
+    <string name="title_activity_plan">plan</string>
+    <string name="title_section1">Section 1</string>
+    <string name="title_section2">Section 2</string>
+    <string name="title_section3">Section 3</string>
+    <string name="title_activity_compenplan">compenplan</string>
+
+</resources>
